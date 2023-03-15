@@ -11,15 +11,42 @@
   --background-secondary: #2e2f42;
   --border-color: #e7e9fc;
 }
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+button {
+  font: inherit;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: inherit;
+}
 
 /* base */
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-  font-style: normal;
-}
 
 body {
   font-family: var(--main-font);
@@ -45,9 +72,21 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  margin-bottom: 8px;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  margin: 0 auto;
 }
 
 /* header */
+header {
+  background-color: var(--border-color);
+}
 
 .logo {
   font-family: var(--secondary-font);
@@ -85,6 +124,10 @@ body {
 }
 
 /* work examples */
+.section-work {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .button {
   font-weight: 500;
@@ -98,6 +141,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--brand-color);
   background: var(--background-main);
+  padding: 12px 24px;
 }
 
 .button:hover,
@@ -106,6 +150,9 @@ body {
   background: var(--accent-color);
   cursor: pointer;
 }
+.work-list {
+  margin-bottom: 72px;
+}
 
 .examples-expl {
   font-weight: 400;
@@ -113,6 +160,17 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+}
+.examples-info {
+  border: 1px solid #e7e9fc;
+  max-width: 360px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: auto;
+}
+.examples-image {
+  margin-bottom: 0;
 }
 
 /* footer */
@@ -123,12 +181,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--contacts-color-secondary);
+  max-width: 264px;
 }
 
 .footer {
   background: var(--background-secondary);
+  padding: 100px 0;
 }
 
 .footer-logo {
   color: var(--contacts-color-secondary);
+  margin-bottom: 16px;
 }
