@@ -87,6 +87,26 @@ h3 {
 
 /* header */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header {
+  display: flex;
+}
+.header-list {
+  display: flex;
+  min-width: 260px;
+  justify-content: space-between;
+}
+.addres-list {
+  display: flex;
+}
+address {
+  margin-left: auto;
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -97,9 +117,14 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-color);
+  margin-right: 76px;
 }
 .logo-part {
   color: var(--brand-color);
+}
+
+.header-item-addres {
+  margin-right: 40px;
 }
 
 .header-item-link {
@@ -107,8 +132,11 @@ h3 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--secondary-color);
 }
+
 .header-contacts {
   font-weight: 400;
   font-size: 16px;
@@ -146,11 +174,10 @@ h3 {
 }
 
 .hero-button {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
@@ -158,6 +185,8 @@ h3 {
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 170px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--third-color);
   background-color: var(--brand-color);
 }
@@ -176,6 +205,13 @@ h3 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.about-us-list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
 }
 
 .about-us-section {
@@ -188,6 +224,11 @@ h3 {
 }
 .info-section {
   padding-bottom: 120px;
+}
+.info-list {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
 }
 /* team */
 
@@ -208,6 +249,7 @@ h3 {
 }
 .our-team-section {
   padding: 120px 0;
+  background-color: var(--contacts-color-secondary);
 }
 .our-team-title {
   margin-bottom: 72px;
@@ -222,6 +264,11 @@ h3 {
   border-radius: 0px 0px 4px 4px;
   padding: 32px 16px;
   max-width: 264px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 /* footer */
